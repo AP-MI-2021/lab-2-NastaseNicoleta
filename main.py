@@ -100,7 +100,36 @@ def test_get_largest_prime_below():
 test_get_largest_prime_below()
 
 def main():
-    if __name__ == "__main__":
+    while True:
+        print('Optiuni: ')
+        print('1.Afiseaza numerele p1 si p2 astfel incat adunate sa dea numarul n, p1 fiind minim, iar p2 maxim')
+        print('2.Afiseaza aproximarea radicalului unui numar folosind metoda lui Newton')
+        print('3.Afiseaza ultimul număr prim mai mic decât un număr dat')
+        print('x.Iesire din program-Exit')
+        optiune = input('Alege optiunea: ')
+        if optiune == '1':
+            a = int(input("Dati numarul de la tastatura: "))
+            test_get_goldbach()
+            print(get_goldbach(a))
+
+        elif optiune == '2':
+            a = int(input("Dati primul numar: "))
+            b = int(input("Dati al doilea numar: "))
+            test_get_newton_sqrt()
+            print(get_newton_sqrt(a, b))
+        elif optiune == '3':
+            n = int(input('Dati numarul de la tastatura: '))
+            test_get_largest_prime_below()
+            print(get_largest_prime_below(n))
+        elif optiune == 'x':
+            break
+        else:
+            print("Optiune invalida citita de la tastatura")
+    if _name_ == '_main_':
+        test_get_goldbach()
+        test_get_newton_sqrt()
+        test_get_largest_prime_below()
+
         main()
 
 
