@@ -125,12 +125,12 @@ def main():
             break
         else:
             print("Optiune invalida citita de la tastatura")
-if _name_ == '_main_':
+if __name__ == '__main__':
     test_get_goldbach()
     test_get_newton_sqrt()
     test_get_largest_prime_below()
 
-        main()
+    main()
 
 
 
