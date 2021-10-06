@@ -3,7 +3,7 @@ def prime(n: int):
     '''
 
     :param n: un numar dat
-    :return: daca un numar este prim
+    :return: True daca un numar este prim sau False daca nu este prim
 
     '''
     nr = 0
@@ -43,12 +43,12 @@ test_get_goldbach()
 
 
 
-def get_newton_sqrt(n: float, steps: int):
+def get_newton_sqrt(n: int, steps: int) -> float:
     '''
 
     :param n: un numar dat
     :param steps: numarul dat de pasi
-    :return: aproximarea radicalului unui numar folosind metoda lui Newthon
+    :return: aproximarea radicalului unui numar folosind metoda lui Newton
 
     '''
     x=2
@@ -58,10 +58,10 @@ def get_newton_sqrt(n: float, steps: int):
 
 
 def test_get_newton_sqrt():
-    assert get_newton_sqrt(2, 1) == 1,5
-    assert get_newton_sqrt(2, 2) == 1,4166
-    assert get_newton_sqrt(5, 1) == 2,25
-    assert get_newton_sqrt(9, 1) == 3,25
+    assert get_newton_sqrt(2, 1) == 1.5
+    assert get_newton_sqrt(2, 2) == 1.4166
+    assert get_newton_sqrt(5, 1) == 2.25
+    assert get_newton_sqrt(9, 1) == 3.25
 
 test_get_newton_sqrt()
 
